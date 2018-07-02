@@ -47,16 +47,16 @@ public class StartTesting extends CustomLogging {
 	}
 	
 	public static void start() {
-		forTest();	/* 테스트를 위한 부분이므로 개발 완료 후엔 지워야 함 */
+		forTest();	/* 테스트를 위한 부분이므로 실제 사용 시엔 꼭 지워야 함 */
 		
 		x = new Excel();
 		
-		new A_Login(Scenario.A, category, "로그인").action();		
 		System.out.println("A_Login 시작");
-		new A_System(Scenario.A, category, "System").action();
+		new A_Login(Scenario.A, category, "로그인").action();		
 		System.out.println("A_System 시작"); 
+		new A_System(Scenario.A, category, "System").action();
+		System.out.println("A_MySite 시작");
 		new A_MySite(Scenario.A, category, "MySite");
-		System.out.println("A_MySite ��시작��");
 		
 		lastLogExcel();
 		System.out.println("\n끝!");
@@ -81,7 +81,7 @@ public class StartTesting extends CustomLogging {
 	}
 
 	/**
-	 * 테스트를 위한 부분이므로 개발 완료 후엔 지워야 함
+	 * 테스트를 위한 부분이므로 실제 사용 시엔 꼭 지워야 함
 	 * */
 	private static void forTest() {
 		pr.setPropValue("site.name", "TEST");
