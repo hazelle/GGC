@@ -3,3 +3,5 @@
 .metadata/
 RemoteSystemsTempFiles/
 AutomatedTesting/target/
+*.xlsx
+*.jpg
