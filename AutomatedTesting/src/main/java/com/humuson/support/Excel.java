@@ -9,7 +9,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 
-import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.BorderStyle;
 import org.apache.poi.ss.usermodel.Cell;
@@ -183,8 +182,8 @@ public class Excel {
 			Files.copy(Paths.get(backpath), Paths.get(path), StandardCopyOption.REPLACE_EXISTING);
 		} catch(FileNotFoundException e) { 
 			System.out.println("!!!!!!!! 엑셀 파일이 열려있어 수정할 수 없습니다. !!!!!!!!");
-		} catch (EncryptedDocumentException | InvalidFormatException | IOException | NullPointerException e) {
-			e.printStackTrace();
+		} catch (Exception e) {
+			((Throwable) e).printStackTrace();
 		}
 	}
 }
