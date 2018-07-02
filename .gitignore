@@ -2,3 +2,8 @@
 *.properties
 .metadata/
 RemoteSystemsTempFiles/
+.recommenders/
+Servers/
+.MF
+.jar
+*.properties
