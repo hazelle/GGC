@@ -24,12 +24,15 @@ public class LogoutFunction extends Scenario {
 	
 	private void logout() {
 		if (cp.detectLogin()) {
+//			WebElement w = FEB("xpath", "/html/body/header/header/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
 			WebElement w = FEB("xpath", "//*[@id='header2']/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
 			System.out.println(w.getAttribute("aria-expanded"));
 			do {
 				w.click();
 				
 			} while (w.getAttribute("aria-expanded").equals("false"));
+			FEB("xpath", "/html/body/header/header/div/div[2]/div/ul/li[10]/a", "로그아웃 메뉴").click();
+			
 			FEB("xpath", "//*[@id='header2']/div/div[2]/div/ul/li[8]/a", "로그아웃 메뉴").click();
 
 			if(cp.checkPage("/login")) {

@@ -5,7 +5,85 @@ RemoteSystemsTempFiles/
 AutomatedTesting/target/
 *.xlsx
 *.jpg
+<<<<<<< HEAD
 *.log
 AutomatedTesting/src/main/resources/build.xml
 AutomatedTesting/src/main/resources/util/chromedriver.exe
 AutomatedTesting/src/main/resources/util/TMS-InHouse.p12
+=======
+<<<<<<< HEAD
+AutomatedTesting/bin/target/test-classes/log4j.xml
+AutomatedTesting/bin/target/m2e-wtp/web-resources/META-INF/maven/com.humuson/selenium/pom.xml
+AutomatedTesting/bin/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+AutomatedTesting/bin/QCTesting.xmind
+AutomatedTesting/bin/.springBeans
+=======
+AutomatedTesting/bin/src/main/webapp/WEB-INF/spring/root-context.xml
+AutomatedTesting/bin/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml
+AutomatedTesting/bin/src/main/resources/logback.xml
+AutomatedTesting/bin/pom.xml
+>>>>>>> branch_20180702
+AutomatedTesting/bin/.settings/org.eclipse.m2e.core.prefs
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.tis
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.frq
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fnm
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fdx
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.fdt
+<<<<<<< HEAD
+AutomatedTesting/bin/.settings/org.eclipse.wst.ws.service.policy.prefs
+AutomatedTesting/bin/.settings/org.eclipse.wst.validation.prefs
+AutomatedTesting/bin/.settings/org.eclipse.wst.common.project.facet.core.xml
+AutomatedTesting/.settings/org.eclipse.core.resources.prefs
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.tii
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.prx
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.nrm
+AutomatedTesting/bin/src/main/webapp/WEB-INF/spring/root-context.xml
+AutomatedTesting/bin/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml
+AutomatedTesting/bin/src/main/resources/logback.xml
+AutomatedTesting/bin/pom.xml
+AutomatedTesting/bin/.settings/org.eclipse.jdt.core.prefs
+AutomatedTesting/bin/.settings/org.eclipse.core.resources.prefs
+AutomatedTesting/bin/.project
+=======
+AutomatedTesting/bin/QCTesting.xmind
+AutomatedTesting/bin/.springBeans
+AutomatedTesting/bin/.settings/org.springframework.ide.eclipse.core.prefs
+AutomatedTesting/bin/.settings/org.springframework.ide.eclipse.beans.core.prefs
+AutomatedTesting/.settings/org.eclipse.core.resources.prefs
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/write.lock
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_1
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen
+AutomatedTesting/bin/target/test-classes/log4j.xml
+AutomatedTesting/bin/target/m2e-wtp/web-resources/META-INF/maven/com.humuson/selenium/pom.xml
+AutomatedTesting/bin/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+AutomatedTesting/bin/.settings/org.eclipse.wst.ws.service.policy.prefs
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.tii
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.prx
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/_0.nrm
+>>>>>>> branch_20180702
+AutomatedTesting/bin/target/classes/logback.xml
+AutomatedTesting/bin/src/test/resources/log4j.xml
+AutomatedTesting/bin/src/main/webapp/WEB-INF/web.xml
+AutomatedTesting/bin/src/main/webapp/WEB-INF/views/home.jsp
+<<<<<<< HEAD
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/write.lock
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments_1
+.recommenders/index/http___download_eclipse_org_recommenders_models_mars_/segments.gen
+AutomatedTesting/bin/.settings/org.springframework.ide.eclipse.core.prefs
+AutomatedTesting/bin/.settings/org.springframework.ide.eclipse.beans.core.prefs
+=======
+AutomatedTesting/bin/.settings/org.eclipse.jdt.core.prefs
+AutomatedTesting/bin/.settings/org.eclipse.core.resources.prefs
+AutomatedTesting/bin/.project
+AutomatedTesting/bin/.settings/org.eclipse.wst.validation.prefs
+AutomatedTesting/bin/.settings/org.eclipse.wst.common.project.facet.core.xml
+>>>>>>> branch_20180702
+AutomatedTesting/bin/.settings/org.eclipse.wst.common.component
+.recommenders/caches/manual-mappings.json
+.recommenders/caches/identified-project-coordinates.json
+*.log
+AutomatedTesting/src/main/resources/util/chromedriver.exe
+AutomatedTesting/src/main/resources/util/TMS-InHouse.p12
+AutomatedTesting/src/main/resources/build.xml
+.gitignore
+>>>>>>> master
