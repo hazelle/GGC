@@ -75,3 +75,8 @@ AutomatedTesting/bin/.settings/org.eclipse.wst.common.project.facet.core.xml
 AutomatedTesting/bin/.settings/org.eclipse.wst.common.component
 .recommenders/caches/manual-mappings.json
 .recommenders/caches/identified-project-coordinates.json
+*.log
+AutomatedTesting/src/main/resources/util/chromedriver.exe
+AutomatedTesting/src/main/resources/util/TMS-InHouse.p12
+AutomatedTesting/src/main/resources/build.xml
+.gitignore
