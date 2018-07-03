@@ -16,13 +16,12 @@ import com.humuson.support.Scenario;
  * @시나리오명 모니터링 서버 메뉴 클릭
  */
 public class E_ClickMntrSvr extends Scenario {
+
 	public E_ClickMntrSvr(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	protected void DO() {
 		if (cp.detectLogin())
 			move();

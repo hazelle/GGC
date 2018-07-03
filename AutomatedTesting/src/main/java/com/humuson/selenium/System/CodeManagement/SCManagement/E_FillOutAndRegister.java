@@ -10,6 +10,11 @@ import com.humuson.support.Scenario;
  * @시나리오명 시스템 코드 정보 입력 폼에 데이터 입력 후 등록 버튼 클릭
  */
 public class E_FillOutAndRegister extends Scenario {
+	public E_FillOutAndRegister(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	private String code_type = "";
 	private String code_code = "";
 	private String code_name = "";
@@ -18,13 +23,6 @@ public class E_FillOutAndRegister extends Scenario {
 	private String start_value = "";
 	private String end_value = "";
 	private String etc = "";
-	
-	public E_FillOutAndRegister(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
 	protected void DO() {
 		setting();

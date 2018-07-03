@@ -18,10 +18,8 @@ import com.humuson.support.Scenario;
 public class E_ClickSCManagement extends Scenario {
 
 	public E_ClickSCManagement(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
 	}
 
 	protected void DO() {
@@ -36,12 +34,12 @@ public class E_ClickSCManagement extends Scenario {
 	}
 
 	private void clickMenu() {
-		WebElement w = FEB("xpath", "/html/body/header/header/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
-		if (driver.findElement(By.xpath("/html/body/header/header/div/div[2]/div")).getAttribute("class").equals("btn-group")) {
+		WebElement w = FEB("xpath", "//*[@id='header2']/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
+		if (driver.findElement(By.xpath("//*[@id='header2']/div/div[2]/div/a[2]")).getAttribute("class").equals("btn-group")) {
 			w.click();
 		}
-		FEB("xpath", "/html/body/header/header/div/div[2]/div/ul/li[8]/a", "System 메뉴").click();
-
+		FEB("xpath", "//*[@id='header2']/div/div[2]/div/ul/li[6]/a", "System 메뉴").click();
+		
 		if (Pattern.compile("sys").matcher(driver.getCurrentUrl()).find()) {
 			w = FEB("xpath", "//*[@id=\"nav_side_list\"]/li[1]/ul", "코드 관리 메뉴(열린 부분)");
 			if (w.getCssValue("display").equals("block")) {

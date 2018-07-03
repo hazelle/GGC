@@ -13,15 +13,14 @@ import com.humuson.support.Scenario;
  * @시나리오명 코드명 클릭, 코드 수정
  * */
 public class E_ClickCodeAndModify extends Scenario {
+	public E_ClickCodeAndModify(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	private String original = "";
 	private String change = "";
 	
-	public E_ClickCodeAndModify(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
 	protected void DO() {
 		click();

@@ -17,11 +17,7 @@ public class E_KakaoAccount extends Scenario {
 	String delete_key = "7777";
 	
 	public E_KakaoAccount(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if (type != E)
-			category[type] = title;
+		super(type, category, title);
 	}
 
 	protected void DO() {

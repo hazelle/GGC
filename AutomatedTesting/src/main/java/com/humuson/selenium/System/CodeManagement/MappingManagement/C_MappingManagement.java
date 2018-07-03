@@ -9,13 +9,13 @@ import com.humuson.support.Scenario;
  * @소분류 매핑 관리
  */
 public class C_MappingManagement extends Scenario {
-	public C_MappingManagement(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
+
 	
+	public C_MappingManagement(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void makeScenario() {
 		addChildScenario(new E_ClickMManagement(E, category, "매핑 관리 메뉴 클릭"));
 		addChildScenario(new E_FillOutAndRegister(E, category, "하단 폼에 데이터 입력 후 등록 버튼 클릭"));

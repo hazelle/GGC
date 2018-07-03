@@ -21,7 +21,6 @@ public class LoginFunction extends Scenario {
 		this.title = "*로그인*";		
 		login();
 	}
-
 	public LoginFunction(String ID, String PW) {
 		this.title = "*로그인*";
 		this.ID = ID;

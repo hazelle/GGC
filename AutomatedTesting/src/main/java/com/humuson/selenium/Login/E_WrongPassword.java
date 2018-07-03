@@ -17,11 +17,9 @@ public class E_WrongPassword extends Scenario {
 	private String PW = "zzzzz123456";
 	
 	public E_WrongPassword(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
 	}
+
 	
 	protected void DO() {
 		String alert = "";

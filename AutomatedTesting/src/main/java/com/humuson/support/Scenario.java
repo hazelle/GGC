@@ -45,6 +45,19 @@ public class Scenario extends CustomLogging{
 	protected int period = 5;
 	protected int flag=0;
 
+	public Scenario() {
+	}
+	
+	public Scenario(String ID, String PW) {
+	}
+	
+	public Scenario(int type, String[] category, String title) {
+		this.title = title;
+		this.TYPE = type;
+		setCategory(category);
+		if(type!=E) category[type] = title;
+	}
+	
 	/** action()만 실행시키면 시나리오의 모든 내용 진행 가능하도록 설계되어있음 */
 	public void action() {
 		CustomWait(3);

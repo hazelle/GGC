@@ -14,10 +14,7 @@ public class E_FatigueSetting extends Scenario {
 	//public String[] chns = {"email", "push", "sms", "kakao"};
 
 	public E_FatigueSetting(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
 	}
 	
 	protected void DO() {

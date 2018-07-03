@@ -10,13 +10,12 @@ import com.humuson.support.Scenario;
  * @시나리오명 신규 버튼 클릭
  * */
 public class E_ResetForm extends Scenario {
-	public E_ResetForm(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public E_ResetForm(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void DO() {
 		fillOut();
 		click();
