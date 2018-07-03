@@ -12,15 +12,13 @@ import com.humuson.support.Scenario;
  * @시나리오명 매핑 코드 선택 후 삭제 버튼 클릭
  * */
 public class E_DeleteCode extends Scenario {
+	public E_DeleteCode(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	private String show_seq = "";
 	private String mapping_name = "";
-	
-	public E_DeleteCode(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
 	protected void DO() {
 		click();

@@ -16,17 +16,15 @@ import com.humuson.support.Scenario;
  * @시나리오명 사이트 수정
  * */
 public class E_ModifySite extends Scenario {
+	public E_ModifySite(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	private String[] chns = ii.chns;
 	
 	private String newname = pr.getPropValue("site.name2");
-	
-	public E_ModifySite(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
-	
+
 	protected void DO() {
 		if(chooseSite(pr.getPropValue("site.name"))) {
 			modify();

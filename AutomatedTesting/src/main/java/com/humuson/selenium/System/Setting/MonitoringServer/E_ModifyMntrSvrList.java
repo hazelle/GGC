@@ -17,15 +17,12 @@ import com.humuson.support.Scenario;
  * @시나리오명 모니터링 서버 리스트 수정
  */
 public class E_ModifyMntrSvrList extends Scenario {
-	private String add = "2";
-	
 	public E_ModifyMntrSvrList(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if (type != E)
-			category[type] = title;
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
 	}
+
+	private String add = "2";
 
 	protected void DO() {
 		driver.navigate().refresh();

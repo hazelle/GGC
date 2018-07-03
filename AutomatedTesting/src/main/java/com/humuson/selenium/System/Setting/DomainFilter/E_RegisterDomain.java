@@ -17,15 +17,13 @@ import com.humuson.support.Scenario;
  * @시나리오명 도메인 필터 등록
  */
 public class E_RegisterDomain extends Scenario {
+	public E_RegisterDomain(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	WebElement engine = null;
 	Select engineSelect = null;
-	
-	public E_RegisterDomain(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
 	protected void DO() {
 		for(int i=0; i<getEngineInfo(); i++) {

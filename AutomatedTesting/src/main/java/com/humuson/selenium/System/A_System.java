@@ -10,13 +10,12 @@ import com.humuson.support.Scenario;
  * @대분류 System
  * */
 public class A_System extends Scenario {
-	public A_System(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public A_System(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void makeScenario() {
 		new LoginFunction();
 		addChildScenario(new B_CodeManagement(B, category, "코드 관리"));

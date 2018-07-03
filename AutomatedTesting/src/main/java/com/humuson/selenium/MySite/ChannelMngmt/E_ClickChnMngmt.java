@@ -15,13 +15,11 @@ import com.humuson.support.Scenario;
  * @시나리오명 채널 관리 버튼 클릭
  * */
 public class E_ClickChnMngmt extends Scenario {
-	public E_ClickChnMngmt(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public E_ClickChnMngmt(int type, String[] category, String title) {
+		super(type, category, title);
+	}
+
 	protected void DO() {
 		if(chooseSite(pr.getPropValue("site.name2"))) {
 			

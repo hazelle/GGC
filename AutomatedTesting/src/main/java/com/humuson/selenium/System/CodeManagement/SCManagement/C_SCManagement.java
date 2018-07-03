@@ -9,11 +9,10 @@ import com.humuson.support.Scenario;
  * @소분류 시스템 코드 관리 
  */
 public class C_SCManagement extends Scenario {
+
 	public C_SCManagement(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
 	}
 
 	protected void makeScenario() {

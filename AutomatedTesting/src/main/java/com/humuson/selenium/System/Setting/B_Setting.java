@@ -12,12 +12,10 @@ import com.humuson.support.Scenario;
 public class B_Setting extends Scenario {
 	
 	public B_Setting(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
 	}
-	
+
 	protected void makeScenario() {
 		addChildScenario(new C_DomainFilter(C, category, "도메인 필터"));
 		addChildScenario(new C_MonitoringServer(C, category, "모니터링 서버"));

@@ -15,13 +15,11 @@ import com.humuson.support.Scenario;
  * @시나리오명 MySite 메뉴 클릭
  * */
 public class E_ClickMySite extends Scenario {
-	public E_ClickMySite(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public E_ClickMySite(int type, String[] category, String title) {
+		super(type, category, title);
+	}
+
 	protected void DO() {
 		if (cp.detectLogin())
 			clickMenu();

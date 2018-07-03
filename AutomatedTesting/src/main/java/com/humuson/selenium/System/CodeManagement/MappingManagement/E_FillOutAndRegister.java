@@ -12,17 +12,15 @@ import com.humuson.support.Scenario;
  * @시나리오명 하단 폼에 데이터 입력 후 등록 버튼 클릭
  * */
 public class E_FillOutAndRegister extends Scenario {
+	public E_FillOutAndRegister(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	private String show_seq = "";
 	private String img_file_name = "";
 	private String mapping_name = "";
 	private String member_column_name = "";
-	
-	public E_FillOutAndRegister(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
 	protected void DO() {
 		setting();

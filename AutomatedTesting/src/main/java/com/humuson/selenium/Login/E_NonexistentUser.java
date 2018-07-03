@@ -17,10 +17,7 @@ public class E_NonexistentUser extends Scenario {
 	private String PW = "123";
 	
 	public E_NonexistentUser(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
+		super(type, category, title);
 	}
 	
 	protected void DO() {

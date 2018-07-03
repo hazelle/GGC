@@ -6,9 +6,11 @@ import org.openqa.selenium.WebElement;
 import com.humuson.selenium.StartTesting;
 
 /**
- * �α׾ƿ�
+ * 로그아웃
  */
 public class LogoutFunction extends Scenario {
+
+
 	protected static WebDriver driver = StartTesting.driver;
 
 	protected static PropRead pr = StartTesting.pr;
@@ -16,22 +18,24 @@ public class LogoutFunction extends Scenario {
 	protected static ControlPage cp = StartTesting.cp;
 
 	public LogoutFunction() {
-		this.title = "*�α׾ƿ�*";
+		this.title = "*로그아웃*";
 		logout();
 	}
-
+	
 	private void logout() {
 		if (cp.detectLogin()) {
-			WebElement w = FEB("xpath", "/html/body/header/header/div/div[2]/div/a[2]", "������� ��Ӹ޴�");
+			WebElement w = FEB("xpath", "//*[@id='header2']/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
+			System.out.println(w.getAttribute("aria-expanded"));
 			do {
 				w.click();
+				
 			} while (w.getAttribute("aria-expanded").equals("false"));
-			FEB("xpath", "/html/body/header/header/div/div[2]/div/ul/li[10]/a", "�α׾ƿ� �޴�").click();
-			
+			FEB("xpath", "//*[@id='header2']/div/div[2]/div/ul/li[8]/a", "로그아웃 메뉴").click();
+
 			if(cp.checkPage("/login")) {
 				OK();
 			} else {
-				FAIL("�α׾ƿ�", driver.getCurrentUrl());
+				FAIL("로그아웃", driver.getCurrentUrl());
 			}
 		}
 	}

@@ -13,13 +13,11 @@ import com.humuson.support.Scenario;
  * @시나리오명 SMS 계정등록
  * */
 public class E_SMSAccount extends Scenario {
-	public E_SMSAccount(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public E_SMSAccount(int type, String[] category, String title) {
+		super(type, category, title);
+	}
+
 	protected void DO() {
 		if (Pattern.compile("/site/account").matcher(driver.getCurrentUrl()).find()) {
 			click();

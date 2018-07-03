@@ -9,13 +9,12 @@ import com.humuson.support.Scenario;
  * @소분류 모니터링 서버
  */
 public class C_MonitoringServer extends Scenario {
-	public C_MonitoringServer(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public C_MonitoringServer(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void makeScenario() {
 		addChildScenario(new E_ClickMntrSvr(E, category, "모니터링 서버 메뉴 클릭"));
 		addChildScenario(new E_RegistrMntrSvrList(E, category, "모니터링 서버 리스트 등록"));

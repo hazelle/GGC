@@ -10,13 +10,12 @@ import com.humuson.support.Scenario;
  * @중분류 코드 관리
  */
 public class B_CodeManagement extends Scenario {
-	public B_CodeManagement(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public B_CodeManagement(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void makeScenario() {
 		
 		addChildScenario(new C_SCManagement(C, category, "시스템 코드 관리"));

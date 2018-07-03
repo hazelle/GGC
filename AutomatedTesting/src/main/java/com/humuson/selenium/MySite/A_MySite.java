@@ -9,13 +9,12 @@ import com.humuson.support.Scenario;
  * @대분류 MySite
  * */
 public class A_MySite extends Scenario {
-	public A_MySite(int type, String[] category, String title) {
-		this.title = title;
-		this.TYPE = type;
-		setCategory(category);
-		if(type!=E) category[type] = title;
-	}
 	
+	public A_MySite(int type, String[] category, String title) {
+		super(type, category, title);
+		// TODO Auto-generated constructor stub
+	}
+
 	protected void makeScenario() {
 		addChildScenario(new B_SiteMngmt(B, category, "사이트 관리"));
 		addChildScenario(new B_ChannelMngmt(B, category, "채널 관리"));
