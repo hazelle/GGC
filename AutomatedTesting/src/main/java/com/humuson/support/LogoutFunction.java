@@ -24,7 +24,7 @@ public class LogoutFunction extends Scenario {
 	
 	private void logout() {
 		if (cp.detectLogin()) {
-			WebElement w = FEB("xpath", "/html/body/header/header/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
+//			WebElement w = FEB("xpath", "/html/body/header/header/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
 			WebElement w = FEB("xpath", "//*[@id='header2']/div/div[2]/div/a[2]", "우측상단 드롭메뉴");
 			System.out.println(w.getAttribute("aria-expanded"));
 			do {
