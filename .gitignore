@@ -5,3 +5,7 @@ RemoteSystemsTempFiles/
 AutomatedTesting/target/
 *.xlsx
 *.jpg
+*.log
+AutomatedTesting/src/main/resources/build.xml
+AutomatedTesting/src/main/resources/util/chromedriver.exe
+AutomatedTesting/src/main/resources/util/TMS-InHouse.p12

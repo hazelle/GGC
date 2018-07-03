@@ -34,8 +34,8 @@ public class StartTesting extends CustomLogging {
 	public static boolean DetailedLog = true;
 	static String[] category = {"", "", ""};
 	
-	private static String propfile = "\\..\\..\\..\\resources.properties";
-	private static String basicfile = "\\..\\..\\..\\basic.properties";
+	private static String propfile = "\\..\\..\\..\\properties\\resources.properties";
+	private static String basicfile = "\\..\\..\\..\\properties\\basic.properties";
 	
 	public static void main(String[] args) throws IOException {
 		setting();
@@ -53,7 +53,7 @@ public class StartTesting extends CustomLogging {
 		
 		System.out.println("A_Login 시작");
 		new A_Login(Scenario.A, category, "로그인").action();		
-		System.out.println("A_System 시작"); 
+		System.out.println("A_System 시작"); 		
 		new A_System(Scenario.A, category, "System").action();
 		System.out.println("A_MySite 시작");
 		new A_MySite(Scenario.A, category, "MySite");
