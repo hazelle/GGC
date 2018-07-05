@@ -6,6 +6,12 @@ AutomatedTesting/target/
 *.xlsx
 *.jpg
 <<<<<<< HEAD
+*.log
+AutomatedTesting/src/main/resources/build.xml
+AutomatedTesting/src/main/resources/util/chromedriver.exe
+AutomatedTesting/src/main/resources/util/TMS-InHouse.p12
+=======
+<<<<<<< HEAD
 AutomatedTesting/bin/target/test-classes/log4j.xml
 AutomatedTesting/bin/target/m2e-wtp/web-resources/META-INF/maven/com.humuson/selenium/pom.xml
 AutomatedTesting/bin/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
@@ -75,3 +81,9 @@ AutomatedTesting/bin/.settings/org.eclipse.wst.common.project.facet.core.xml
 AutomatedTesting/bin/.settings/org.eclipse.wst.common.component
 .recommenders/caches/manual-mappings.json
 .recommenders/caches/identified-project-coordinates.json
+*.log
+AutomatedTesting/src/main/resources/util/chromedriver.exe
+AutomatedTesting/src/main/resources/util/TMS-InHouse.p12
+AutomatedTesting/src/main/resources/build.xml
+.gitignore
+>>>>>>> master

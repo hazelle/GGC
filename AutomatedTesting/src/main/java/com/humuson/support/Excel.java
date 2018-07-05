@@ -29,7 +29,7 @@ public class Excel {
 //	private String path = "";
 
 	// public static Workbook xlsWb;
-	public static Workbook xlsxWb;
+	public Workbook xlsxWb;
 
 	public static Sheet sheet;
 	public static int cellcnt = 0;
@@ -181,6 +181,7 @@ public class Excel {
 			Files.copy(Paths.get(backpath), Paths.get(path), StandardCopyOption.REPLACE_EXISTING);
 		} catch(FileNotFoundException e) { 
 			System.out.println("!!!!!!!! 엑셀 파일이 열려있어 수정할 수 없습니다. !!!!!!!!");
+			((Throwable) e).printStackTrace();
 		} catch (Exception e) {
 			((Throwable) e).printStackTrace();
 		}
