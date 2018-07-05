@@ -81,7 +81,7 @@ public class StartTesting extends CustomLogging {
 	}
 
 	/**
-	 * 테스트를 위한 부분이므로 실제 사용 시엔 꼭 지워야 함
+	 * forTest() : 테스트를 위한 부분이므로 실제 사용 시엔 꼭 지워야 함
 	 * */
 	private static void forTest() {
 		pr.setPropValue("site.name", "TEST");
